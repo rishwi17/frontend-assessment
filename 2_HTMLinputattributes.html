@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- QUESTION 1 -->
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" /><br />
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" /><br /><br />
+
+    <p>Please select your gender:</p>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label><br />
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label><br />
+    <input type="radio" id="other" name="gender" value="other" />
+    <label for="other">Other</label>
+
+    <p>Check boxes:</p>
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked />
+      <label for="scales">ONE</label>
+    </div>
+    <div>
+      <input type="checkbox" id="horns" name="horns" />
+      <label for="horns">TWO</label>
+    </div>
+
+    <br />
+    <input class="favorite styled" type="button" value="hello button" />
+
+    <br />
+
+    <input type="submit" value="Submit" />
+
+    <br />
+    <br />
+
+    <form action="/action_page.php">
+      <label for="email">Enter your email pls:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <!-- QUESTION 2 -->
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile" />
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" />
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" />
+    <label for="bdaymonth">Birthday (month and year):</label>
+    <input type="month" id="bdaymonth" name="bdaymonth" />
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5" />
+
+    <br />
+    <br />
+
+    <!-- QUESTION 3 -->
+    <label for="name">Name (4 to 8 characters):</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      minlength="4"
+      maxlength="8"
+      size="10"
+    />
+
+    <form>
+      <label for="disabled">Disabled</label><br />
+      <input name="disabled" value="disabled" disabled /> <br /><br />
+      <label for="readonly">Readonly</label><br />
+      <input name="readonly" value="readonly" readonly />
+    </form>
+
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" value="John" /><br />
+
+    <!-- QUESTION 4 -->
+    <a href="https://www.youtube.com" target="_blank">target youtube</a>
+    <br />
+
+    <!-- QUESTION 5 -->
+    <iframe
+      src="https://www.youtube.com/watch?v=gMezvMijAYQ&ab_channel=AKA%C3%98X"
+      title="youtube video"
+    >
+    </iframe>
+    <marquee>This is basic example of marquee</marquee>
+  </body>
+</html>

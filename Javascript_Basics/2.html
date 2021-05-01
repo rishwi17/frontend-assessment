@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fruits"></p>
+    <button id="sort">Sort</button>
+
+    <script>
+        var fruits = ['apple','banana','orange','grapes','mango'];
+
+        var fruitList = document.getElementById('fruits');
+        var btn = document.getElementById('sort');
+        for (x in fruits){
+            fruitList.innerHTML += `<li> ${fruits[x]} </li>`;
+        }
+
+        function sortFruits(){
+            var sortedFruits = fruits.sort().reverse();
+            fruitList.innerHTML = '';
+            for (x in fruits){
+                fruitList.innerHTML += `<li> ${sortedFruits[x]} </li>`;
+                
+            }
+        }
+
+        btn.addEventListener('click',sortFruits);
+
+    </script>
+</body>
+</html>

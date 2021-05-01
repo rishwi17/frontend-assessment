@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      a {
+        font-size: 20px;
+      }
+      .bg {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      #section1 {
+        height: 300px;
+        background-color: pink;
+      }
+
+      #section2 {
+        height: 700px;
+        width: 600px;
+        background-color: rgb(93, 212, 204);
+      }
+      #section3 {
+        border: 1px solid black;
+        background-color: rgb(219, 143, 143);
+      }
+      #section4 {
+        margin: 30px;
+        padding: 100px;
+        background: url(https://i.pinimg.com/originals/a8/11/a2/a811a271be7d26f6b72e3ce520c158e2.png)
+            left top no-repeat,
+          url(https://www.w3schools.com/CSS/img_flwr.gif) right bottom no-repeat,
+          url(http://38.media.tumblr.com/cb032df4cbd785267e27d7ebe80da07d/tumblr_nqn5a0IY4P1qilpmuo1_400.gif)
+            left top repeat;
+        background-size: 100px, 230px, auto;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+        border: 5px solid black;
+      }
+      table:hover ~ .bg {
+        background-color: rgb(216, 107, 74);
+      }
+
+      p {
+        color: red;
+      }
+
+      p.ex1 {
+        display: none;
+      }
+      p.ex2 {
+        display: inline;
+      }
+      p.ex3 {
+        display: block;
+      }
+      p.ex4 {
+        display: inline-block;
+      }
+      .padding-margin {
+        padding: 100px;
+        margin: 70px;
+        border: 1px solid #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#footer">Go to bottom</a>
+    <!-- question1 -->
+    <div id="section1">
+      <h2>Table with black border</h2>
+
+      <table id="table">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+      </table>
+      <div class="bg"></div>
+    </div>
+    <!-- Question2 -->
+    <div id="section2">
+      <h1>The display Property</h1>
+
+      <h2>display: none:</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+        <p class="ex1">HELLO WORLD!</p>
+        Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+      </div>
+
+      <h2>display: inline:</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+        <p class="ex2">HELLO WORLD!</p>
+        Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+      </div>
+
+      <h2>display: block:</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+        <p class="ex3">HELLO WORLD!</p>
+        Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+      </div>
+
+      <h2>display: inline-block:</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+        <p class="ex4">HELLO WORLD!</p>
+        Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+      </div>
+    </div>
+
+    <!-- question4 -->
+
+    <div id="section3">
+      <div class="padding-margin">
+        This element has a padding of 70px and margin of 100px
+      </div>
+    </div>
+
+    <!-- question5 -->
+
+    <div id="section4">
+      <h1>Lorem Ipsum Dolor</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <footer id="footer"></footer>
+    <a href="#">Go to top</a>
+  </body>
+</html>

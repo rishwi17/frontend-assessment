@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add CSS comments in your CSS block. */
+/* 
+.comment{
+    color: white;
+    text-decoration: none;
+} 
+*/
+
+.part1 {
+  font-size: 30px;
+  height: 50vh;
+  background-color: rgb(51, 130, 196);
+}
+
+.part2 {
+  font-size: 30px;
+  height: 50vh;
+  background-color: rgb(145, 211, 102);
+}
+
+.part3 {
+  font-size: 30px;
+  height: 50vh;
+  background-color: rgb(231, 230, 149);
+}
+
+.part4 {
+  background-image: url(bg1.jpg);
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  color: white;
+}
+
+p.part5 {
+  height: 200px;
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-style: dotted solid double dashed;
+  border-color: red green yellow blue;
+  border-width: 5px 8px 10px 6px;
+}
+
+.part6 {
+  background-color: aqua;
+  text-align: center;
+  font-size: 30px;
+  height: 300px;
+  width: 600px;
+}
+
+.part7 {
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 30px;
+  height: 80%;
+  width: 100%;
+}
+
+.part8 {
+  height: 200px;
+  background-color: antiquewhite;
+}
+
+.part8 .first {
+  font-style: italic;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(54, 230, 230);
+  text-align: center;
+}
+
+.part8 .second {
+  font-style: oblique;
+  font-size: small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: blueviolet;
+  text-align: end;
+}
+.part8 .third {
+  font-style: initial;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  text-align: left;
+}

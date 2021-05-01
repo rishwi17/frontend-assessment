@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = 'button'></button>
+
+    <script>
+        var obj = {
+             x : 0 ,
+             get getX(){
+                 return this.x;
+             },
+
+             set setX(x){
+                 this.x = x ;
+             }
+
+        }
+        var button = document.getElementById('button')
+        button.innerText = obj.x;
+
+        button.addEventListener('click',()=>{
+            obj.x ++;
+            button.innerText= obj.x;
+        })
+    </script>
+</body>
+</html>
